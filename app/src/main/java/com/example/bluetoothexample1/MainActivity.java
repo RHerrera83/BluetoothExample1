@@ -100,19 +100,19 @@ public class MainActivity extends Activity  {
         btnOff = (Button) findViewById(R.id.button4);
 
 
-        btAdapter = BluetoothAdapter.getDefaultAdapter();
-        checkBTState();
+//        btAdapter = BluetoothAdapter.getDefaultAdapter();
+//        checkBTState();
 
         btnOff.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                mConnectedThread.write("0");    // Send "0" via Bluetooth
+//                mConnectedThread.write("0");    // Send "0" via Bluetooth
                 Toast.makeText(getBaseContext(), "Turn off LED", Toast.LENGTH_SHORT).show();
             }
         });
 
         btnOn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                mConnectedThread.write("1");    // Send "1" via Bluetooth
+//                mConnectedThread.write("1");    // Send "1" via Bluetooth
                 Toast.makeText(getBaseContext(), "Turn on LED", Toast.LENGTH_SHORT).show();
             }
         });
